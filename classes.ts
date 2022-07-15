@@ -1,9 +1,15 @@
 class Vehicle {
-  drive(): void {
+  public drive(): void {
     console.log('chugga chugga');
   }
-  honk(): void {
+  public honk(): void {
     console.log('beep');
+  }
+}
+
+class Car extends Vehicle {
+  private drive(): void {
+    console.log('vroom');
   }
 }
 

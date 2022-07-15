@@ -11,8 +11,8 @@ let colors: string[] = ['red', 'green', 'blue'];
 let myNumbers: number[] = [1, 2, 3];
 let truths: boolean[] = [true, true, false];
 
-class Car {}
-let car: Car = new Car();
+// class Car {}
+// let car: Car = new Car();
 
 let point: { x: number; y: number } = {
   x: 10,
