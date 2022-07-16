@@ -1,9 +1,0 @@
-8
-88/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/dist/index.html1657928364816858764 0
-77/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/dist1657928364828858916 1
-99/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/dist/index.377278e2.js.map1657928364828858916 0
-83/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/index.html1657928256887547889 0
-95/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/dist/index.377278e2.js1657928364828858916 0
-85/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/src/index.ts1657928319120296074 0
-76/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps/src1657928364604856129 1
-72/home/colombo/Programming/my-learning/typescript-complete-dev-guide/maps1657928364812858716 1
