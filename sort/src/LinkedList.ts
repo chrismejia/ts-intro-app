@@ -1,3 +1,5 @@
+import { Sorter } from './Sorter';
+
 export class Node {
   // default to null
   next: Node | null = null;
@@ -5,8 +7,12 @@ export class Node {
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   head: Node | null = null;
+
+  constructor() {
+    super();
+  }
 
   add(val: number): void {
     const node = new Node(val);

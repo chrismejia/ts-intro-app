@@ -35,3 +35,25 @@ class Sorter {
 
 const sorter = new Sorter([10, 3, -5, 0]);
 ```
+
+## Classes, but with future promises: Abstract Classes
+
+- Can't be used to create an object directly
+- Only used as a parent class
+- Can contain real implementation for some methods
+- The implemented methods can refer to other methods that don't actually exist yet (we still have to provide names and types for the un-implemented methods)
+- Can make child classes promise to implement some other method
+
+## Interfaces vs abstract classes
+
+### Interfaces
+
+- Sets up a contract between different classes
+- Use when we have very different object that we want to work together
+- Promotes loose coupling
+
+### Abstract Classes/Inheritance (`extends`)
+
+- Sets up a contract between different classes
+- Use when we are trying to build up a definition of an object
+- Strongly couples classes together

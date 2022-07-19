@@ -7,16 +7,16 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+/**
+ * Converting `Sorter` to an abstract class with abstract type specs of what to expect allows you to call methods within `Sorter` that will eventually exists (via class extension) as long as you provide the type specs for each future property/method.
+ */
 class Sorter {
-    constructor(collection) {
-        this.collection = collection;
-    }
     sort() {
-        const { length } = this.collection;
+        const { length } = this;
         for (let i = 0; i < length; i++) {
             for (let j = 0; j < length - i - 1; j++) {
-                if (this.collection.compare(j, j + 1)) {
-                    this.collection.swap(j, j + 1);
+                if (this.compare(j, j + 1)) {
+                    this.swap(j, j + 1);
                 }
             }
         }
