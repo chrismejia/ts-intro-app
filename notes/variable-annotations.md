@@ -39,7 +39,7 @@ const multiply = function (e: number, f: number): number {
 
 ## `void` and `never`
 
-- NB: functions that return `void` **CAN** return `null` or `undefined`\
+- NB: functions that return `void` **CAN** return `null` or `undefined`
 - `void`: nothing is ever returned from this function
 - `never`: never reaches the end of this function (to return anything, because it exited this function to run something else)
 
@@ -49,7 +49,7 @@ const logger = (message: string): void => {
   console.log(message);
 };
 
-// uses `never` since we're instead throwing a new Error
+// uses `never` since we're throwing a new Error instead of returning anything (or nothing)
 const msgErrThrower = (errMsg: string): never => {
   throw new Error(errMsg);
 };
