@@ -1,11 +1,11 @@
-import { CSVFileReader } from './CsvFileReader';
+import { MatchReader } from './MatchReader';
 import { MatchResult } from './MatchResult';
 
 /**
  * Read the `football.csv`, split the file on each newline, and create nested arrays of each entry at each newline split
  */
 
-const reader = new CSVFileReader('./data/football.csv');
+const reader = new MatchReader('./data/football.csv');
 reader.read();
 
 console.log(reader.data);

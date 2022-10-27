@@ -5,9 +5,11 @@
 - Used heavily when writing reusable code
 
 ```ts
-class HoldAnything<Type> {
-  data: Type;
+class HoldAnything<SomeType> {
+  data: SomeType;
 }
+
+// One thing to keep in mind is that Generics are typically shortened to `<T>`
 
 // now we can create instances using this generic
 const holdNumber = new HoldAnything<number>();

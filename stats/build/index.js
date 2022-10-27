@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const CsvFileReader_1 = require("./CsvFileReader");
+const MatchReader_1 = require("./MatchReader");
 const MatchResult_1 = require("./MatchResult");
 /**
  * Read the `football.csv`, split the file on each newline, and create nested arrays of each entry at each newline split
  */
-const reader = new CsvFileReader_1.CSVFileReader('./data/football.csv');
+const reader = new MatchReader_1.MatchReader('./data/football.csv');
 reader.read();
 console.log(reader.data);
 let lfcWins = 0;

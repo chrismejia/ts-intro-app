@@ -25,7 +25,7 @@ export abstract class CSVFileReader<T> {
 
   constructor(public filename: string) {}
 
-  abstract mapRow(row: string): T;
+  abstract mapRow(row: string[]): T;
 
   read(): void {
     this.data = fs
@@ -37,15 +37,3 @@ export abstract class CSVFileReader<T> {
       .map(this.mapRow);
   }
 }
-
-// mapRow(row: string[]): MatchData {
-//   return [
-//     dateStringToDate(row[0]),
-//     row[1],
-//     row[2],
-//     parseInt(row[3]),
-//     parseInt(row[4]),
-//     row[5] as MatchResult,
-//     row[6],
-//   ];
-// }
